@@ -1,0 +1,28 @@
+  <div class="form">
+  <div >
+       <label >Name:</label>
+       <input type="text" [(ngModel)]="newAccount.name">
+  </div>
+  <div>
+    <label for="email">Email:</label>
+    <input id="email" type="email" [(ngModel)]="newAccount.email" >
+  </div>
+  <div>
+    <label for="password">Password:</label>
+    <input type="password" [(ngModel)]="newAccount.password">
+  </div>
+  <div>
+    <label for="confirmpassword">Confirm Password:</label>
+    <input type="password" [(ngModel)]="newAccount.confirmpassword">
+  </div>
+  <button (click)="addAccount(newAccount)">Submit</button>
+</div>
+  <ul class="account">
+    <li *ngFor="let account of accounts">
+      <h3>{{account.name}}</h3>
+      <p>{{account.email}}</p>
+      <p>{{account.password}}</p>
+      <p>{{account.confirmpassword}}</p>
+      <p>{{account.phoneNumber}}</p>
+    </li>
+  </ul>

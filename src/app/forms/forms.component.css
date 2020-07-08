@@ -1,0 +1,9 @@
+.form
+{ border: 2px solid gray;
+  margin: 1em  25em 10em;
+  padding: 1em;
+}
+.form div
+{
+    margin: 0.5em;
+}
